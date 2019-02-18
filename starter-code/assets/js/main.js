@@ -121,3 +121,16 @@
 				});
 
 })(jQuery);
+
+
+$('#dot-one').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/computer.jpg)');
+})
+
+$('#dot-two').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/climb.jpg)');
+})
+
+$('#dot-three').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/stand.jpg)');
+})
