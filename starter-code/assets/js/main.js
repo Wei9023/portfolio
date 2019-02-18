@@ -122,31 +122,15 @@
 
 })(jQuery);
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+$('#dot-one').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/computer.jpg)');
+})
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+$('#dot-two').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/climb.jpg)');
+})
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+$('#dot-three').on("click", function(){
+	$('#main > section.one').css('background-image','url(images/stand.jpg)');
+})
